@@ -1,0 +1,19 @@
+PRIVATE VALIDATION REPORT — A Little Puzzle Book, Volume One
+
+Final PDF page count: 40 — PASS (exactly 40 pages).
+Page structure: PASS — 1 title; 2 Sudoku instructions; 3 Word Search instructions; 4 Sudoku divider; 5–26 Sudoku; 27 Word Search divider; 28–39 Word Search; 40 closing.
+Sudoku count: 22 — PASS; no duplicate puzzle grids.
+Difficulty distribution: Easy 8; Medium 9; Hard 5 — PASS.
+Sudoku uniqueness: PASS; all 22 puzzles independently counted to exactly one solution using a backtracking solver capped at two solutions.
+Sudoku clue-count ranges: Easy: 40–41, Medium: 33–34, Hard: 28–29
+Word Search count: 12 — PASS; every grid is 12 × 12.
+Listed word count: 132 — PASS; each listed word occurs exactly once in its grid across horizontal, vertical and diagonal directions, forwards or backwards.
+Word list duplication: PASS; no repeated entries within a puzzle.
+Customer PDF: PASS; no answer keys or solution pages included.
+Page text/section checks: PASS; title, first Sudoku, first Word Search and closing placeholder found in expected positions.
+Source files: a_little_puzzle_book_source.py (reusable PDF generator) and puzzle_book_editable_data.json (editable puzzle grids and word lists). The generator was executed successfully and produced a 40-page A5 PDF.
+Typography: embedded DejaVu Serif and Sans open-source faces are used as dependable local substitutes; Cormorant Garamond, Montserrat and DM Sans were not available in the runtime.
+Print construction: A5 portrait; 13 mm content margins; vector text, lines and grids (300-DPI raster resolution is not applicable to vector elements). Warm ivory background and restrained neutral palette.
+Visual QC: final PDF rendered to puzzle_book_contact_sheet.png for a 40-page thumbnail inspection.
+Difficulty qualification: Easy/Medium/Hard labels use clue-count targets as a practical approximation. A human-technique difficulty rating was not performed.
+Revision: Removed the decorative sentence “A quiet moment for a clear mind.” from all 22 Sudoku pages. Regenerated PDF and confirmed the phrase is absent; page count remains exactly 40.
